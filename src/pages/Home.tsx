@@ -3,11 +3,12 @@ import Header from '../components/Header.tsx';
 import MenuDesktop  from '../components/MenuDesktop.tsx';
 import SliderBanner from '../components/slider/sliderBanner/SliderBanner.tsx';
 import SliderCards from '../components/slider/sliderProduct/SliderCard.tsx';
-import Rodape from '../components/Rodape.tsx';
+import BaseBoard from '../components/BaseBoard.tsx';
 
 import banner_1 from '../assets/banner1.svg'
 import pistache from '../assets/Sorvete_pistache.png'
-import { useMediaQuery } from 'react-responsive';
+
+
 
 
 interface Flavers {
@@ -21,11 +22,7 @@ interface IceCreamTypes {
     type: string;
     flavers: Flavers[];
 }
-function Home() {
-
-    const isTablet = useMediaQuery({ minWidth: 426, maxWidth: 768 });
-    const isDesktop = useMediaQuery({ minWidth: 1024});
-    const isMobile = useMediaQuery({ minWidth: 320, maxWidth: 425 });
+function Home({isDesktop, isTablet, isMobile}: any) {
     
     const imgBanner = [
             banner_1,
@@ -59,7 +56,7 @@ function Home() {
             {(isDesktop || isTablet) && <SliderBanner img={imgBanner} isDesktop={isDesktop}/>}
             {isMobile && <div className='pt-[130px]'></div>}
             {IceCreemTypes.map((IceCreemTypes, index) => <SliderCards key={index} IceCreemTypes={IceCreemTypes} isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>)}
-            <Rodape isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
+            <BaseBoard isDesktop={isDesktop} isTablet={isTablet} isMobile={isMobile}/>
         </div>
     );
 }

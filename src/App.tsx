@@ -1,18 +1,19 @@
-import {BrowserRouter, Routes, Route} from "react-router";
-import Home from "./pages/Home.tsx";
+import React from "react";
+import AppRoutes from "./routes/AppRoutes";
+import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
+import {store} from "./app/store";
+import './index.css';
+
 
 
 function App(){
   return(
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home/>}></Route>
-      {/*<Routes path="/login" element={<Login/>}></Routes>
-      <Routes path="/register" element={<Register/>}></Routes>
-      <Routes path="/dashboard-account" element={<Dashboard-account/>}></Routes>
-      <Routes path="/dashboard-product" element={<dashboard-product/>}></Routes>*/}
-    </Routes>
-    </BrowserRouter>
+    <React.StrictMode>
+      <Provider store={store}>
+        <AppRoutes/>
+      </Provider>
+    </React.StrictMode>
   );
 }
 

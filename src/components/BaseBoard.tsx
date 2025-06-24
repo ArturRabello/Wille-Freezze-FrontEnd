@@ -4,7 +4,7 @@ import intagram from '../assets/instagram-icon.svg';
 import youtube from '../assets/youtube-icon.svg';
 import tikTok from '../assets/tik-tok-icon.svg';
 
-function Rodape({isDesktop, isTablet, isMobile}: any){
+function BaseBoard({isDesktop, isTablet, isMobile}: any){
     return(<div className={'flex flex-col items-center justify-evenly w-full bg-[#D7F1F9] h-[230px]'}>
             <div className={`flex items-center justify-evenly ${isDesktop ? 'gap-x-[700px]' : isTablet ? 'gap-x-[300px]' : 'gap-x-[20px]'}`}>
                <MainIcon/>
@@ -21,4 +21,4 @@ function Rodape({isDesktop, isTablet, isMobile}: any){
     </div>);
 }
 
-export default Rodape;
+export default BaseBoard;

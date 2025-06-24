@@ -17,14 +17,14 @@ function Menu(){
                                 Sorvetes
                                 {isHoverSubMenu &&
                                     <div className={'absolute left-[140px] top-0 bg-[#D7F1F9] w-[140px] z-2 shadow-[0px_4px_4px_rgba(0,0,0,0.25)] cursor-pointer '}>
-                                        <ul className='grid row-span-3 border-[#0097C4] border-[2px]'>
-                                            <li className='font-size-[14px] font-bold text-[#0097C4] p-[10px] bg-[#D7F1F9] border-b-[2px] border-[#0097F1F9] cursor-pointer  hover:bg-[#0097C4] hover:text-[#D7F1F9] hover: font-bold'>Classicos</li>
+                                        <ul className='grid row-span-3'>
+                                            <li className='font-size-[14px] font-bold text-[#0097C4] p-[10px] bg-[#D7F1F9] border-b-[2px] border-[#0097C4] cursor-pointer  hover:bg-[#0097C4] hover:text-[#D7F1F9] hover: font-bold'>Classicos</li>
                                             <li className='font-size-[14px] font-bold text-[#0097C4] p-[10px] bg-[#D7F1F9] cursor-pointer  hover:bg-[#0097C4] hover:text-[#D7F1F9] hover: font-bold'>Especiais</li>
                                         </ul>
                                     </div>}
                             </li>
                             <li className='font-size-[14px] font-bold text-[#0097C4] p-[10px] bg-[#D7F1F9] border-b-[2px] border-[#0097C4] cursor-pointer  hover:bg-[#0097C4] hover:text-[#D7F1F9] hover: font-bold'>Login</li>
-                            <li className='font-size-[14px] font-bold text-[#0097C4] p-[10px] bg-[#D7F1F9] cursor-pointer  hover:bg-[#0097C4] hover:text-[#D7F1F9] hover: font-bold'>Sesta</li>
+                            <li className='font-size-[14px] font-bold text-[#0097C4] p-[10px] bg-[#D7F1F9] cursor-pointer  hover:bg-[#0097C4] hover:text-[#D7F1F9] hover:font-bold'>Cesta</li>
                         </ul>
                     </div>}
             </div>
